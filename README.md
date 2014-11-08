@@ -1,2 +1,2 @@
-php-merchant-api
-================
+PHP Example for the InstaBT Payments API
+========================================
