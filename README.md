@@ -47,8 +47,7 @@ $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 if ($http_status != 200)
     throw new Exception("Request Failed. http status: " . $http_status);
   curl_close($ch);
-
-// Trim any whitespace from the front and end of the string and decode it
+  
 $result = json_decode(trim($result));
 if (($error = get_json_error()) !== false) {
     throw new Exception("json_decode failed: " . $error);
