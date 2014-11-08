@@ -54,16 +54,6 @@ if (($error = get_json_error()) !== false) {
     throw new Exception("json_decode failed: " . $error);
 }
 
-// Verify that we got a valid response
-if (!isset($result->status))
-{
-  throw new Exception("API response did not contain 'status'");
-}
-if ($result->status == 'error')
-{
-  throw new Exception("API call failed: " . $result->message);
-}
-
 $invoice_url = $result.Url;
 
 // Redirect user to invoice
