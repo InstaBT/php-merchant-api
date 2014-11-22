@@ -2,4 +2,4 @@ PHP Example for the InstaBT Payments API
 ========================================
 
 
-see example.php
+see sample.php
